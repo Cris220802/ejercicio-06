@@ -53,9 +53,9 @@ public class ClienteEntity {
     @NotBlank(message = "La direccion es requerida")
     private String direccion;
 
-    @NotBlank(message = "La edad es requerida")
-    @Min(value = 18, message = "La edad minima es 18")
-    private int edad;
+    @NotNull(message = "La edad es requerida")
+    @Min(value = 18, message = "La edad mínima es 18")
+    private Integer edad;
 
     @NotBlank(message = "El rfc es requerido")
     //@Pattern(regexp = "^[A-Z]{4}[0-9]{6}[A-Z0-9]{3}$", message = "El RFC no es valido")
